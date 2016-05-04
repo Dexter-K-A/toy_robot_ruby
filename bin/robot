@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+# Toy Robot
+# 
+# Programming Test
+# 
+# @author::    Dexter (Karim A.)  (mailto:dexter.codo@gmail.com)
+# @copyright:: Copyright (c) 2016 Xirabit Solutions Sdn Bhd
+# @license::   Distributes under the same terms as Ruby
+
+require "highline"
+require "./lib/robot.rb"
+require "./lib/game.rb"
+
+begin
+
+  ToyRobot::Game.new(ARGV).run
+
+rescue Interrupt => e
+	puts "\nThanks for playing Toy Robot...."
+end
